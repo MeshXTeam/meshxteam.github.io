@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Официальный сайт команды MeshallorXTeam</title>
+    <style>
+        /* Принудительная тёмная тема */
+        body {
+            margin: 0;
+            padding: 0;
+            background: url('background.png') no-repeat center center fixed;
+            background-size: cover;
+            color: #eee;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Полупрозрачный блок с текстом и заголовком */
+        .content-block {
+            background-color: rgba(0, 0, 0, 0.8);
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px 30px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        /* Заголовок */
+        h1 {
+            margin: 0 0 10px 0;
+            font-size: 2rem;
+        }
+
+        /* Скруглённая картинка рядом с заголовком */
+        .rounded-img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            flex-shrink: 0;
+            box-shadow: 0 0 8px rgba(0,0,0,0.5);
+        }
+
+        /* Текст под заголовком */
+        .text-block {
+            flex: 1;
+        }
+
+        /* Адаптивность для мобильных устройств */
+        @media (max-width: 480px) {
+            .content-block {
+                flex-direction: column;
+                max-width: 90%;
+                padding: 15px 20px;
+                margin: 30px auto;
+                text-align: center;
+            }
+
+            .rounded-img {
+                width: 100px;
+                height: 100px;
+                margin-bottom: 15px;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content-block">
+        <img src="icongroup.png" alt="Аватар" class="rounded-img" />
+        <div class="text-block">
+            <h1>Просто команда, сделанная по фану (CS2)</h1>
+            <p>Клан тег: MeshXTeam</p>
+			<a href="https://steamcommunity.com/groups/MeshallorXTeam" class="gradient-link">Подать заявку на вступление</a>
+			<style>
+.gradient-link {
+  font-weight: bold;
+  font-size: 18px;
+  background: linear-gradient(90deg, #DC143C, #7FFFD4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* Для Firefox */
+  background-clip: text;
+  color: transparent;
+  text-decoration: none; /* чтобы убрать подчеркивание, можно изменить по желанию */
+}
+.gradient-link:hover {
+  text-decoration: underline; /* Например, подчеркнуть при наведении */
+}
+</style>
+        </div>
+    </div>
+</body>
+</html>
